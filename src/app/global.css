@@ -1351,3 +1351,20 @@ map{
   width: 100%;
   height: 270px;
 }
+
+.btn-contact {
+  background-color: #3f79d1;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 28px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #3f79d1;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
