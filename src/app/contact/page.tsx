@@ -12,7 +12,7 @@ export default function Contact() {
           <Image
             src="/img/110827(1).jpg"
             alt="Contact"
-            className="rounded shadow w-100 h-auto mt-5"
+            className="rounded shadow w-100 h-auto mt-md-5"
             width={1500}
             height={1000}
           />
