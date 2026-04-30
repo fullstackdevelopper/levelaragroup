@@ -20,7 +20,7 @@ export default function Contact() {
 
 
         <div className="col-12 col-md-6">
-          <h2 className="mb-4">Contactez-nous</h2>
+          <h2 className="mb-4 mt-sm-5">Contactez-nous</h2>
 
           <form>
             <div className="mb-3">

@@ -44,7 +44,7 @@ export default function Carriere() {
                             value={selected}
                             onChange={(e) => setSelected(e.target.value)}
                         >
-                            <option value="" disabled>-- choisissez une option --</option>
+                            <option value="" disabled>-- choisissez une cat&eacute;gorie --</option>
                             <option value="ambassadeur">Ambassadeur</option>
                             <option value="membre">Membre</option>
                             <option value="investisseur">Investisseur</option>
