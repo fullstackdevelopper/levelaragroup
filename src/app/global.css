@@ -1,12 +1,55 @@
 /* Fonts */
-:root {
-  --default-font:
-    "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway", sans-serif;
-  --nav-font: "Poppins", sans-serif;
+@font-face {
+  font-family: 'MyFont';
+  src: url('/public/fonts/webfonts/StackSansHeadline-Bold.woff2') format('woff2');
+  /* font-weight: 300; */
+  font-style: normal;
 }
+@font-face {
+  font-family: 'MyFont';
+  src: url('/public/fonts/webfonts/StackSansHeadline-Extralight.woff2') format('woff2');
+  /* font-weight: 300; */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyFont';
+  src: url('/public/fonts/webfonts/StackSansHeadline-Light.woff2') format('woff2');
+  /* font-weight: 300; */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('/public/fonts/webfonts/StackSansHeadline-Medium.woff2') format('woff2');
+  /* font-weight: 300; */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('/public/fonts/webfonts/StackSansHeadline-Regular.woff2') format('woff2');
+  /* font-weight: 300; */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('/public/fonts/webfonts/StackSansHeadline-SemiBold.woff2') format('woff2');
+  /* font-weight: 300; */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('/public/fonts/webfonts/StackSansHeadline[wght].woff2') format('woff2');
+  /* font-weight: 300; */
+  font-style: normal;
+}
+
+:root{
+  font-family: MyFont;
+}
+
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
@@ -1367,4 +1410,8 @@ map{
   background-color: #3f79d1;
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.ctl{
+  margin-top: 3rem;
 }

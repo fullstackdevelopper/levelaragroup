@@ -29,11 +29,11 @@ export default function FormInvestisseur() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // 🔥 Navigation
+  // Navigation
   const nextStep = () => setStep((prev) => prev + 1);
   const prevStep = () => setStep((prev) => prev - 1);
 
-  // 🔥 Produits
+  // Produits
   const produitsMap: any = {
     cosmetiques: ["Déodorant", "Lotion", "Pommade"],
     beauty: ["Hair humain", "Perruque"],

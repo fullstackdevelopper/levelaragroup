@@ -144,7 +144,10 @@ export default function About() {
                     <p>
                         Vous n’êtes pas ici pour accumuler des connaissances inutiles. Vous
                         êtes ici pour acquérir des compétences qui produisent des résultats.
-                        Chaque formation est conçue pour aller droit au but : <strong>comprendre rapidement</strong>, <strong>appliquer immédiatement</strong>, <strong>monétiser efficacement</strong>.
+                        Chaque formation est conçue pour aller droit au but : <strong>comprendre rapidement</strong>, <strong>appliquer immédiatement</strong>, <strong>monétiser efficacement</strong>. <br />
+                        Prêtes à passer &agrave; l'action? Contactez-nous pour découvrir
+                        comment structurer vos compétences, activer vos opportunités et
+                        construire une trajectoire durable.
                     </p>
                 </div>
             </section>

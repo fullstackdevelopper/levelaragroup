@@ -40,12 +40,14 @@ export default function Header() {
           <p>
             <span className="typed" ref={el}>LevelARA Group</span>
           </p>
-          <Link href="/contact" >
-            <button className="btn btn-info btn-contact btn-lg text-white shadow mt-3 fw-bold">
-              <i className="bi bi-telephone me-2"></i>
-              Contactez-nous
-            </button>
-          </Link>
+          <div className="ctl">
+            <Link href="/contact">
+              <button className="btn btn-info btn-contact btn-lg text-white shadow mt-3 fw-bold">
+                <i className="bi bi-telephone me-2"></i>
+                Contactez-nous
+              </button>
+            </Link>
+          </div>
         </div>
       </section >
     </>

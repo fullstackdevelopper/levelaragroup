@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import Carriere from "@/app/contact/page"
 
 export default function Header() {
     return (
@@ -54,7 +53,7 @@ export default function Header() {
 
                         <li>
                             <Link href="/carriere">
-                                <i className="bi bi-mortarboard navicon"></i>Carri&egrave;re
+                                <i className="bi bi-graph-up me-2"></i>Carri&egrave;re
                             </Link>
                         </li>
 

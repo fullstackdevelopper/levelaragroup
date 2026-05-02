@@ -7,17 +7,6 @@ export default function Contact() {
     return (
         <>
             <section id="contact" className="contact section">
-
-                <div className="container section-title" data-aos="fade-up">
-                    <h2>Contact</h2>
-                    <p>
-                        Prêtes à passer &agrave; l'action? Contactez-nous pour découvrir
-                        comment structurer vos compétences, activer vos opportunités et
-                        construire une trajectoire durable.
-                    </p>
-                </div>
-
-
                 <div className="container" data-aos="fade-up" data-aos-delay="100">
                     <div className="row gy-4">
                         <div className="col-lg-5">
