@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Link from "next/link"
+
 export default function About() {
     return (
         <>
@@ -145,9 +147,9 @@ export default function About() {
                         Vous n’êtes pas ici pour accumuler des connaissances inutiles. Vous
                         êtes ici pour acquérir des compétences qui produisent des résultats.
                         Chaque formation est conçue pour aller droit au but : <strong>comprendre rapidement</strong>, <strong>appliquer immédiatement</strong>, <strong>monétiser efficacement</strong>. <br />
-                        Prêtes à passer &agrave; l'action? Contactez-nous pour découvrir
+                        Prêtes à passer &agrave; l'action? <Link href="/contact">Contactez-nous</Link> pour découvrir
                         comment structurer vos compétences, activer vos opportunités et
-                        construire une trajectoire durable.
+                        construire une trajectoire durable ou <Link href="/carriere">rejoignez-nous </Link> pour d&eacute;sormais faire partie de l'aventure.
                     </p>
                 </div>
             </section>

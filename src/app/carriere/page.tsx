@@ -13,7 +13,7 @@ export default function Carriere() {
 
     return (
         <div className="container py-5 overflow-hidden">
-            <div className="row align-items-start">
+            <div className="row align-items-md-center">
 
                 {/* Image */}
                 <div className="col-12 col-md-6 text-center mb-4 mb-md-0">
@@ -27,8 +27,9 @@ export default function Carriere() {
                 </div>
 
                 {/* Choix + Formulaire dynamique */}
-                <div className="col-12 col-md-6 mt-3 mt-md-4">
-                    <h2 className="mb-2 text-primary">Faites partie de l’aventure</h2>
+                <div className="col-12 col-md-6 mt-3 mt-md-0 d-flex flex-column">
+                    <h2 className="mb-2 text-primary mt-md-2">Faites partie de l’aventure</h2>
+                    <div className="d-flex flex-column justify-content-md-center flex-grow-1"></div>
                     <p className="text-muted mb-4">
                         Découvrez les opportunités qui vous correspondent et évoluez avec nous.
                     </p>
@@ -59,6 +60,6 @@ export default function Carriere() {
                     {selected === "freelance" && <FormCarriereFreelance />}
                 </div>
             </div>
-        </div>
+        </div >
     );
 }

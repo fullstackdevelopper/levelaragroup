@@ -53,6 +53,10 @@
   font-style: normal;
 }
 
+* {
+  font-family: MyFont;
+}
+
 :root {
   font-family: MyFont;
 }
@@ -1180,6 +1184,12 @@ section,
 
 .contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+@media (max-width: 767px) {
+  .footer-text {
+    font-size: 10px;
+  }
 }
 
 /*--------------------------------------------------------------
