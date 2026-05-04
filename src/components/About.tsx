@@ -16,7 +16,7 @@ export default function About() {
                     </p>
                 </div>
                 <hr />
-                <div className="d-flex flex-column flex-md-row">
+                <div className="d-flex flex-column flex-md-row align-items-md-center">
                     <div>
                         <div className="container section-title" data-aos="fade-up">
                             <div className="col-12 col-md-12">
