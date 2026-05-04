@@ -1,6 +1,6 @@
 
 import Header from '@/components/Header'
-import Sidebar from '@/components/Sidebar'
+import Sidebar from '@/components/SidebarMobile'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'

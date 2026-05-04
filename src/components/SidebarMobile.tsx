@@ -4,7 +4,9 @@ import Link from "next/link"
 export default function Header() {
     return (
         <>
-            <header id="header" className="header dark-background d-flex flex-column">
+            <header id="header"
+                className="header dark-background d-flex flex-column flex-xl-row align-items-center justify-content-xl-between"
+            >
                 <i className="header-toggle d-xl-none bi bi-list"></i>
 
                 <div className="profile-img">
@@ -33,31 +35,31 @@ export default function Header() {
                 </div>
 
                 <nav id="navmenu" className="navmenu">
-                    <ul>
-                        <li>
+                    <ul className="d-flex flex-column flex-xl-row align-items-center m-0 ">
+                        <li className="mx-xl-3 my-2 my-xl-0 fw-bold">
                             <Link href="/" className="active"
                             ><i className="bi bi-house navicon"></i>Acceuil
                             </Link>
                         </li>
-                        <li>
+                        <li className="mx-xl-3 my-2 my-xl-0">
                             <Link href="/#about"
                             ><i className="bi bi-info-circle me-2"></i> &Agrave; propos
                             </Link>
                         </li>
 
-                        <li>
+                        <li className="mx-xl-3 my-2 my-xl-0">
                             <Link href="/#portfolio"
                             ><i className="bi bi-card-list me-2"></i>R&eacute;sum&eacute;
                             </Link>
                         </li>
 
-                        <li>
+                        <li className="mx-xl-3 my-2 my-xl-0">
                             <Link href="/carriere">
                                 <i className="bi bi-graph-up me-2"></i>Carri&egrave;re
                             </Link>
                         </li>
 
-                        <li>
+                        <li className="mx-xl-3 my-2 my-xl-0">
                             <Link href="/contact"
                             ><i className="bi bi-envelope navicon"></i> Contact
                             </Link>
