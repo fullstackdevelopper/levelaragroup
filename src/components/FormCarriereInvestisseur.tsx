@@ -70,9 +70,7 @@ export default function FormCarriereInvestisseur() {
       const successToast = document.getElementById("successToast");
 
       if (successToast) {
-        const bootstrap = await import(
-          "bootstrap/dist/js/bootstrap.bundle.min.js"
-        );
+        const bootstrap = await import("bootstrap");
 
         const toast = new bootstrap.Toast(successToast, {
           delay: 3000,
