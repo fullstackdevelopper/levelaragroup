@@ -1402,7 +1402,7 @@ hr {
 }
 
 p {
-  text-align: justify;
+  text-align: left;
 }
 
 map {
@@ -1651,10 +1651,62 @@ map {
 .invest-title {
   color: #114c5a;
 }
-.footer-group, .resume-group{
+.footer-group,
+.resume-group {
   background-color: #e7ecf0;
 }
 
-.desc-princ{
+.desc-princ {
   font-style: normal;
+}
+
+/* ===============================
+   BRAND / HEADER MOBILE
+================================ */
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 15px;
+  }
+
+  /* Logo + titre en colonne */
+  .brand-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Logo plus grand */
+  .header .profile-img img {
+    width: 75px;
+    margin: 0;
+    border: 4px solid rgba(255, 255, 255, 0.15);
+  }
+
+  /* Titre plus petit */
+  .sitename {
+    font-size: 18px !important;
+    white-space: nowrap;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
+/* ===============================
+   BRAND DESKTOP
+================================ */
+
+@media (min-width: 1200px) {
+  .brand-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sitename {
+    font-size: 22px;
+  }
 }

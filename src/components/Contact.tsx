@@ -109,7 +109,7 @@ export default function Contact() {
                                         />
                                     </div>
                                     <div className="col-md-12">
-                                        <label htmlFor="email-field" className="pb-2">Votre Email</label>
+                                        <label htmlFor="email-field" className="pb-2">Votre E-mail</label>
                                         <input
                                             type="email"
                                             name="email"

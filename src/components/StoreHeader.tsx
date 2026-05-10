@@ -1,66 +1,81 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react"
 
 export default function Header() {
-    return (
-        <>
-            <header id="header"
-                className="header store-header d-flex flex-column flex-xl-row align-items-center justify-content-xl-between"
-            >
-                <i className="header-toggle d-xl-none bi bi-list"></i>
+    const [menuOpen, setMenuOpen] = useState(false)
 
-                <div className="profile-img">
+    return (
+        <header
+            id="header"
+            className={`
+                header
+                store-header
+                d-flex
+                flex-column
+                flex-xl-row
+                align-items-center
+                justify-content-center
+                gap-4
+                gap-xl-5
+                py-3
+                ${menuOpen ? "header-show" : ""}
+            `}
+        >
+            {/* Hamburger */}
+            <i
+                className={`header-toggle d-xl-none bi ${menuOpen ? "bi-x" : "bi-list"
+                    }`}
+                onClick={() => setMenuOpen(!menuOpen)}
+            ></i>
+
+            {/* Logo + titre */}
+            <div className="brand-container d-flex flex-column flex-xl-row align-items-center gap-2">
+                <div className="profile-img m-0">
                     <Image
                         src="/img/LevelARA IM Icon White BG.jpg"
-                        alt=""
+                        alt="Logo"
                         className="img-fluid rounded-circle"
-                        width={300}
-                        height={300}
+                        width={70}
+                        height={70}
                     />
                 </div>
-                <h1 className="text-white align-items-center justify-content-center fs-4 fw-bold">LevelARA Invest-Market</h1>
 
-                {/* <div className="social-links text-center">
-                    <a href="#" className="twitter"><i className="bi bi-twitter-x"></i></a>
-                    <a href="#" className="facebook"><i className="bi bi-facebook"></i></a>
-                    <a href="#" className="instagram"><i className="bi bi-instagram"></i></a>
-                    <a href="#" className="google-plus"><i className="bi bi-skype"></i></a>
-                    <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
-                </div> */}
+                <h1 className="sitename m-0 fw-bold fs-5">
+                    LevelARA Invest-Market
+                </h1>
+            </div>
 
-                <nav id="navmenu" className="navmenu">
-                    <ul className="d-flex flex-column flex-xl-row align-items-center m-0 ">
-                        <li className="mx-xl-3 my-2 my-xl-0 fw-bold">
-                            <Link href="/" className="active"
-                            ><i className="bi bi-house navicon"></i>LevelARA Group
-                            </Link>
-                        </li>
-                        {/* <li className="mx-xl-3 my-2 my-xl-0">
-                            <Link href="/#about"
-                            ><i className="bi bi-info-circle me-2"></i> &Agrave; propos
-                            </Link>
-                        </li> */}
-                        {/* 
-                        <li className="mx-xl-3 my-2 my-xl-0">
-                            <Link href="/#portfolio"
-                            ><i className="bi bi-card-list me-2"></i>R&eacute;sum&eacute;
-                            </Link>
-                        </li> */}
+            {/* Navigation */}
+            <nav
+                id="navmenu"
+                className={`navmenu ${menuOpen ? "d-block" : "d-none"} d-xl-block`}
+            >
+                <ul className="d-flex flex-column flex-xl-row align-items-center m-0 p-0">
+                    <li className="mx-xl-2 my-2 my-xl-0 fw-bold">
+                        <Link href="/" className="active">
+                            <i className="bi bi-house navicon"></i>
+                            LevelARA Group
+                        </Link>
+                    </li>
 
-                        <li className="mx-xl-3 my-2 my-xl-0">
-                            <Link href="/carriere">
-                                <i className="bi bi-graph-up me-2"></i>Carri&egrave;re
-                            </Link>
-                        </li>
+                    <li className="mx-xl-2 my-2 my-xl-0">
+                        <Link href="/carriere">
+                            <i className="bi bi-graph-up me-2"></i>
+                            Carri&egrave;re
+                        </Link>
+                    </li>
 
-                        <li className="mx-xl-3 my-2 my-xl-0">
-                            <Link href="/contact"
-                            ><i className="bi bi-envelope navicon"></i> Contact
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-        </>
+                    <li className="mx-xl-2 my-2 my-xl-0">
+                        <Link href="/contact">
+                            <i className="bi bi-envelope navicon"></i>
+                            Contact
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     )
 }

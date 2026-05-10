@@ -301,7 +301,7 @@ export default function FormCarriereInvestisseur() {
               name="motivation"
               className="form-control mb-1"
               rows={5}
-              placeholder="Pourquoi voulez-vous devenir notre investisseur ?"
+              placeholder="Pourquoi voulez-vous investir avec nous ?"
               onChange={handleChange}
               required
               minLength={20}

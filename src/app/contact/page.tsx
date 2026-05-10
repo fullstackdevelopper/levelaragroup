@@ -29,8 +29,13 @@ export default function Contact() {
             </div>
 
             <div className="mb-3">
-              <label className="form-label">Email</label>
-              <input type="email" className="form-control" placeholder="Votre email" />
+              <label className="form-label">Prenom</label>
+              <input type="text" className="form-control" placeholder="Votre pr&eacute;nom" />
+            </div>
+
+            <div className="mb-3">
+              <label className="form-label">E-mail</label>
+              <input type="email" className="form-control" placeholder="Votre e-mail" />
             </div>
 
             <div className="mb-3">
