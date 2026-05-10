@@ -16,7 +16,7 @@ export default function footer() {
                         <div className="copyright">
                             <p className="mb-0 text-center footer-text px-1">
                                 © <span>Copyright</span>
-                                <strong className="px-1">LevelARA Group - 2026</strong>
+                                <strong className="px-1">LevelARA Invest-Market - 2026</strong>
                                 <span>Tous droits réservés</span>
                             </p>
                         </div>
