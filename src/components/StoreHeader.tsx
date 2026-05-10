@@ -14,17 +14,11 @@ export default function Header() {
                         src="/img/LevelARA IM Icon White BG.jpg"
                         alt=""
                         className="img-fluid rounded-circle"
-                        width={200}
-                        height={200}
+                        width={300}
+                        height={300}
                     />
                 </div>
-
-                <a
-                    href="index.html"
-                    className="logo d-flex align-items-center justify-content-center"
-                >
-                    <h1 className="sitename">LevelARA Invest-Market</h1>
-                </a>
+                <h1 className="text-white align-items-center justify-content-center fs-4 fw-bold">LevelARA Invest-Market</h1>
 
                 {/* <div className="social-links text-center">
                     <a href="#" className="twitter"><i className="bi bi-twitter-x"></i></a>

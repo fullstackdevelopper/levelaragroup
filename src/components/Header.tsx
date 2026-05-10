@@ -42,7 +42,7 @@ export default function Header() {
           </p>
           <div className="ctl">
             <Link href="/contact">
-              <button className="btn btn-info btn-contact btn-lg text-white shadow mt-3 fw-bold">
+              <button className="btn btn-info btn-contact btn-lg text-white shadow fw-bold">
                 <i className="bi bi-telephone me-2"></i>
                 Contactez-nous
               </button>

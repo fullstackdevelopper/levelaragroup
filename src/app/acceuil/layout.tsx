@@ -23,20 +23,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr">
-      <body>
-        <Sidebar />
-        <main className='main'>
-          {children}
-        </main>
-        <Footer />
-        <a
-          href="#"
-          id="scroll-top"
-          className="scroll-top d-flex align-items-center justify-content-center"
-        ><i className="bi bi-arrow-up-short"></i></a>
-        <Script src="/js/main.js" strategy="afterInteractive" />
-      </body>
-    </html>
+    <><Sidebar /><main className='main'>
+      {children}
+    </main><Footer /><a
+      href="#"
+      id="scroll-top"
+      className="scroll-top d-flex align-items-center justify-content-center"
+    ><i className="bi bi-arrow-up-short"></i></a><Script src="/js/main.js" strategy="afterInteractive" /></>
+
   )
 }

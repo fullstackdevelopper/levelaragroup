@@ -7,7 +7,7 @@ export default function About() {
             <section id="about" className="about section">
                 <div className="container section-title" data-aos="fade-up">
                     <h2 className="">À propos</h2>
-                    <p className="text-md-start">
+                    <p className="text-md-start desc-princ">
                         Le potentiel humain est universel, mais les structures qui le
                         transforment en résultats réels sont rares. <strong>LevelARA Group</strong>, écosystème stratégique
                         dédié à la structuration des parcours éducatifs, professionnels et
@@ -23,7 +23,7 @@ export default function About() {
                         <div className="container section-title" data-aos="fade-up">
                             <div className="col-12 col-md-12">
                                 <h2 className="">Vision</h2>
-                                <p className="text-md-start">
+                                <p className="text-md-start desc-princ">
                                     Devenir la référence institutionnelle dans la structuration des
                                     trajectoires de réussite et de création de valeur à long terme
                                     pour les individus et les communautés à fort potentiel.
@@ -34,7 +34,7 @@ export default function About() {
                         <div className="container section-title" data-aos="fade-up">
                             <div className="col-12 col-md-12">
                                 <h2 className="">Mission</h2>
-                                <p className="text-md-start">
+                                <p className="text-md-start desc-princ">
                                     Concevoir et déployer un cadre systémique qui connecte
                                     l’éducation, l’accès aux opportunités professionnelles et la
                                     construction de patrimoine, afin de transformer le potentiel
@@ -45,7 +45,7 @@ export default function About() {
                     </div>
                     <div className="img mt-lg-5">
                         <Image
-                            src="/img/335.jpeg"
+                            src="/img/33.jpeg"
                             alt=""
                             className="img-fluid"
                             width={1000}
@@ -54,8 +54,8 @@ export default function About() {
                     </div>
                 </div>
                 <hr />
-                <div className="container section-title" data-aos="fade-up">
-                    <div className="col-12 col-md-12">
+                <div className=" section-title" data-aos="fade-up">
+                    <div className="col-12 col-md-12 ml-2 ps-3 pe-3">
                         <h2 className="">Mod&egrave;le</h2>
                         <p className="text-md-start">
                             La marque m&egrave;re incarne l'autorit&eacute; strat&eacute;gique
@@ -71,11 +71,16 @@ export default function About() {
                     <div className="row gy-4 justify-content-center">
                         <div className="col-lg-4">
                             <Image
-                                src="/img/Pro Academy.png"
+                                src="/img/Pro_Academy.png"
                                 className="img-fluid academy"
                                 alt=""
                                 width={1536}
                                 height={1024}
+                                style={{
+                                    width: "100%",
+                                    height: "auto",
+                                    objectFit: "cover"
+                                }}
                             />
                         </div>
                         <div className="col-lg-8 content explication-about">
@@ -98,7 +103,7 @@ export default function About() {
                     <div className="row gy-4 justify-content-center">
                         <div className="col-lg-4">
                             <Image
-                                src="/img/Career.png"
+                                src="/img/Career().png"
                                 className="img-fluid career"
                                 alt=""
                                 width={1536}
@@ -121,7 +126,7 @@ export default function About() {
                     <div className="row gy-4 justify-content-center">
                         <div className="col-lg-4">
                             <img
-                                src="assets/img/LevelARA IM Logo White BG.jpg"
+                                src="img/invest market.jpg(1).jpeg"
                                 className="img-fluid invest"
                                 alt=""
                             />
@@ -132,14 +137,15 @@ export default function About() {
                                 LevelARA Invest-Market, le niveau supérieur, le vrai marché financier. Nous connectons ressources,
                                 projets et personnes au sein d'un m&ecirc;me système pour g&eacute;nerer une croissance &eacute;conomique durable.
                                 C’est ici que la progression devient patrimoine. Ce n'est pas seulement faire de l'argent, c'est plut&ocirc;t faire travailler votre argent,
-                                b&acirc;tir et construire votre entreprise avec nous, gagner de l'argent avec LevelARA.
+                                b&acirc;tir et construire votre entreprise avec nous, gagner de l'argent avec LevelARA. <br />
+                                <Link href="/invest-market">Visiter LevelARA Invest-Market</Link>
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="portfolio" className="portfolio section light-background">
+            <section id="portfolio" className="portfolio resume-group section light-background">
 
                 <div className="container section-title" data-aos="fade-up">
                     <h2>R&eacute;sum&eacute;</h2>
@@ -147,7 +153,7 @@ export default function About() {
                         Vous n’êtes pas ici pour accumuler des connaissances inutiles. Vous
                         êtes ici pour acquérir des compétences qui produisent des résultats.
                         Chaque formation est conçue pour aller droit au but : <strong>comprendre rapidement</strong>, <strong>appliquer immédiatement</strong>, <strong>monétiser efficacement</strong>. <br />
-                        Prêtes à passer &agrave; l'action? <Link href="/contact">Contactez-nous</Link> pour découvrir
+                        <i className="bi bi-play-circle text-danger"></i> Prêtes à passer &agrave; l'action? <Link href="/contact">Contactez-nous</Link> pour découvrir
                         comment structurer vos compétences, activer vos opportunités et
                         construire une trajectoire durable ou <Link href="/carriere">rejoignez-nous </Link> pour d&eacute;sormais faire partie de l'aventure.
                     </p>

@@ -1,13 +1,21 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react"
 
 export default function Header() {
+    const [menuOpen, setMenuOpen] = useState(false)
     return (
         <>
-            <header id="header"
-                className="header dark-background d-flex flex-column flex-xl-row align-items-center justify-content-xl-between"
+            <header
+                id="header"
+                className={`header dark-background d-flex flex-column flex-xl-row align-items-center justify-content-xl-between ${menuOpen ? "header-show" : ""
+                    }`}
             >
-                <i className="header-toggle d-xl-none bi bi-list"></i>
+                <i
+                    className={`header-toggle d-xl-none bi bg-primary ${menuOpen ? "bi-x" : "bi-list"}`}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                ></i>
 
                 <div className="profile-img">
                     <Image
@@ -26,13 +34,7 @@ export default function Header() {
                     <h1 className="sitename">LevelARA Group</h1>
                 </a>
 
-                <div className="social-links text-center">
-                    <a href="#" className="twitter"><i className="bi bi-twitter-x"></i></a>
-                    <a href="#" className="facebook"><i className="bi bi-facebook"></i></a>
-                    <a href="#" className="instagram"><i className="bi bi-instagram"></i></a>
-                    <a href="#" className="google-plus"><i className="bi bi-skype"></i></a>
-                    <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
-                </div>
+                
 
                 <nav id="navmenu" className="navmenu">
                     <ul className="d-flex flex-column flex-xl-row align-items-center m-0 ">
@@ -43,7 +45,7 @@ export default function Header() {
                         </li>
                         <li className="mx-xl-3 my-2 my-xl-0">
                             <Link href="/#about"
-                            ><i className="bi bi-info-circle me-2"></i> &Agrave; propos
+                            ><i className="bi bi-info-circle me-2"></i> À propos
                             </Link>
                         </li>
 

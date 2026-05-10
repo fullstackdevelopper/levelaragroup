@@ -27,17 +27,14 @@ export default function Store() {
                 {/* TITLE */}
                 <div className="text-center mb-5">
 
-                    <span className="badge bg-dark px-3 py-2 mb-3">
-                        Portfolio
-                    </span>
-
-                    <h2 className="fw-bold display-5">
-                        Our Latest Projects
+                    <h2 className="fw-bold display-5 fs-4 invest-title">
+                        Achetez • Vendez • Investissez
                     </h2>
 
-                    <p className="text-muted col-lg-6 mx-auto">
-                        Découvrez nos réalisations modernes et créatives
-                        construites avec passion et innovation.
+                    <p className="text-muted mx-auto">
+                        Découvrez une nouvelle expérience du commerce digital avec LevelARA Invest-Market.
+                        Achetez des produits de qualité, vendez vos offres au bon public et explorez des opportunités
+                        d’investissement dans un espace moderne, sécurisé et pensé pour votre croissance.
                     </p>
 
                 </div>

@@ -1354,10 +1354,10 @@ section,
 .invest {
   border: 1px solid #ffc901;
   margin-top: 15px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .explication-about {
@@ -1429,8 +1429,15 @@ map {
 }
 
 .ctl {
-  margin-top: 3rem;
+  position: absolute;
+  bottom: 0px;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+
   display: none;
+  justify-content: center;
 }
 
 .navmenu a:hover,
@@ -1620,4 +1627,34 @@ map {
 
 .sitename {
   color: white;
+}
+
+@media (max-width: 1199px) {
+  .header-show .navmenu {
+    display: block;
+  }
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.hr-footer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.invest-title {
+  color: #114c5a;
+}
+.footer-group, .resume-group{
+  background-color: #e7ecf0;
+}
+
+.desc-princ{
+  font-style: normal;
 }
