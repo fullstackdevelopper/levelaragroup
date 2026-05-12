@@ -10,24 +10,18 @@ export default function Header() {
     return (
         <header
             id="header"
-            className={`
-                header
-                store-header
-                d-flex
-                flex-column
-                flex-xl-row
-                align-items-center
-                justify-content-center
-                gap-4
-                gap-xl-5
-                py-3
-                ${menuOpen ? "header-show" : ""}
-            `}
+            className={`header store-header d-flex flex-column flex-xl-row align-items-center justify-content-xl-between gap-xl-5 px-xl-4 ${menuOpen ? "header-show" : ""
+                }`}
         >
+
             {/* Hamburger */}
             <i
                 className={`header-toggle d-xl-none bi ${menuOpen ? "bi-x" : "bi-list"
                     }`}
+                style={{
+                    backgroundColor: "#114c5a",
+                    color: "white"
+                }}
                 onClick={() => setMenuOpen(!menuOpen)}
             ></i>
 
